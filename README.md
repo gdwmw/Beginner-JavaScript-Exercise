@@ -1,0 +1,2 @@
+# Latihan-JavaScript-GDWMW
+ 
