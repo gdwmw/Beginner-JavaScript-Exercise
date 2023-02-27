@@ -70,4 +70,19 @@
 // }
 // alert("Berhasil Stop!");
 
-
+// let maximal = parseInt(prompt("Masukan nilai maksimal!"));
+// while (!maximal) {
+//   maximal = parseInt(prompt("Masukan nilai maksimal!"));
+// }
+// const targetNum = Math.floor(Math.random() * maximal) + 1;
+// console.log(targetNum);
+// let guess = parseInt(prompt("Isi tebakan kamu!"));
+// while (guess !== targetNum) {
+//   if (guess > targetNum) {
+//     guess = parseInt(prompt("Terlalu tinggi!"));
+//   } else {
+//     guess = parseInt(prompt("Terlalu Rendah!"));
+//   }
+// }
+// alert("Tebakan kamu benar!");
+// console.log(targetNum);
