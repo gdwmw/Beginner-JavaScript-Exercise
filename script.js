@@ -86,3 +86,9 @@
 // }
 // alert("Tebakan kamu benar!");
 // console.log(targetNum);
+
+const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+angka.forEach(function (n) {
+  console.log(n * n);
+});
