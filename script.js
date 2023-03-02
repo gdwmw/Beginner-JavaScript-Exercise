@@ -1,3 +1,171 @@
+//-----IF, ELSE IF, ELSE STATEMENT-----
+// const iniTanggal = 27;
+// if (iniTanggal === 27) {
+//   alert("IF STATEMENT");
+// } else if (iniTanggal === 20) {
+//   alert("ELSE IF STATEMENT");
+// } else {
+//   alert("ELSE STATEMENT");
+// }
+
+//-----NESTING CONDITION-----
+// const isiPassword = prompt("Silahkan Isi Password!");
+// if (isiPassword.length >= 6) {
+//   if (isiPassword.indexOf(" ") === -1) {
+//     alert("Password Valid!");
+//   } else {
+//     alert("Password Tidak Boleh Ada Spasi!");
+//   }
+// } else {
+//   alert("Password Minimal 6 Karakter!");
+// }
+
+//-----OPERATOR LOGIC AND, OR, NOT-----
+// const iniNamaSaya = "Landensaki";
+// const iniUmurSaya = 25;
+//---AND---
+// if (iniNamaSaya === "Landensaki" && iniUmurSaya === 30) {
+//   alert("IF STATEMENT - OPERATOR LOGIC AND");
+// } else if (iniNamaSaya === "Skydazmc" && iniUmurSaya === 25) {
+//   alert("ELSE IF STATEMENT - OPERATOR LOGIC AND");
+// } else {
+//   alert("ELSE STATEMENT - OPERATOR LOGIC AND");
+// }
+//---OR---
+// if (iniNamaSaya === "Landensaki" || iniUmurSaya === 30) {
+//   alert("IF STATEMENT - OPERATOR LOGIC OR");
+// } else if (iniNamaSaya === "Skydazmc" || iniUmurSaya === 25) {
+//   alert("ELSE IF STATEMENT - OPERATOR LOGIC OR");
+// } else {
+//   alert("ELSE STATEMENT - OPERATOR LOGIC OR");
+// }
+//---NOT---
+// if (iniUmurSaya !== 25) {
+//   alert("IF STATEMENT - OPERATOR LOGIC NOT");
+// } else if (iniUmurSaya !== 27) {
+//   alert("ELSE IF STATEMENT - OPERATOR LOGIC NOT");
+// } else {
+//   alert("ELSE STATEMENT - OPERATOR LOGIC NOT");
+// }
+
+//-----SWITCH (ALTERNATIVE) IF, ELSE IF, ELSE STATEMENT-----
+// let iniNilai = prompt("Masukkan Nilai Kamu!");
+// if (iniNilai == null) {
+//   iniNilai = 0;
+// }
+// alert(`Nilai kamu ${iniNilai}`);
+// switch (String(iniNilai)) {
+//   case "70":
+//     alert("Cukup!");
+//     break;
+//   case "80":
+//     alert("Baik!");
+//     break;
+//   case "90":
+//     alert("Sangat Baik!");
+//     break;
+//   case "100":
+//     alert("Sempurna!");
+//     break;
+//   default:
+//     alert("Sangat Buruk!");
+// }
+
+//-----STRUCTURE ARRAY-----
+let iniKosong = [];
+let kumpulanHuruf = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+let kumpulanAngka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let iniCampuran = [true, 1, "string", null];
+console.log("----------------------------");
+console.log(iniKosong);
+console.log(kumpulanHuruf);
+console.log(kumpulanAngka);
+console.log(iniCampuran);
+console.log("----------------------------");
+console.log(iniKosong[0]);
+console.log(kumpulanHuruf[0]);
+console.log(kumpulanHuruf[2]);
+console.log(kumpulanAngka[4]);
+console.log(kumpulanAngka[6]);
+console.log(iniCampuran[0]);
+console.log(iniCampuran[3]);
+console.log("----------------------------");
+iniKosong[0] = 500;
+iniKosong[2] = 1000;
+iniKosong[8] = 1500;
+console.log(iniKosong[8]);
+kumpulanHuruf[0] = "Z";
+console.log(kumpulanHuruf[0]);
+kumpulanAngka[6] = 100;
+console.log(kumpulanAngka[6]);
+iniCampuran[0] = false;
+console.log(iniCampuran[0]);
+console.log("----------------------------");
+console.log(iniKosong);
+console.log(kumpulanHuruf);
+console.log(kumpulanAngka);
+console.log(iniCampuran);
+
+//-----PERSONAL EXPERIMENT-----
+//---EXPERIMENT 01---
+// let nama = [];
+// for (let i = 0; i < 3; i++) {
+//   nama[i] = prompt("Masukkan Nama Ke-" + i);
+// }
+// let tampilNama = prompt("Tampilkan Nama");
+// console.log(nama[tampilNama]);
+//---EXPERIMENT 02---
+// let id;
+// let email = [];
+// let password = [];
+// for (let i = 0; i <= 2; ) {
+//   id = prompt("Register Masukkan ID");
+//   email[id] = prompt("Register Masukkan Email");
+//   password[id] = prompt("Masukkan Password");
+//   let pilihan = prompt(
+//     "Untuk Login Masukkan (Y), Untuk Register Masukkan (N)"
+//   ).toUpperCase();
+//   if (pilihan === "N") {
+//     i++;
+//   } else {
+//     id = prompt("Masukkan ID");
+//     let logEmail = prompt("Masukkan Email");
+//     let logPassword = prompt("Masukkan Password");
+//     if (logEmail === email[id] && logPassword === password[id]) {
+//       alert("Login Berhasil");
+//     } else {
+//       alert("Login Gagal");
+//     }
+//   }
+// }
+
+// let barbel = [];
+// barbel.push(20, 15, 10, 5);
+// barbel.push(2.5, 0);
+// barbel.pop();
+// barbel.shift();
+// barbel.unshift(20);
+
+// let array1 = ["intan", "dewo"];
+// let array2 = ["mei", "botak"];
+// let array3 = array2.concat(array1);
+
+// console.log(array3);
+
+// let bilangan = [100, 199, 2008, 313, 2125];
+
+// console.log(bilangan.join("/"));
+
+// const outfit = ["celana", "baju", "blouse", "tanktop"];
+// console.log(outfit);
+
+// const board = [
+//   ["O", null, "O"],
+//   ["X", "X", "X"],
+//   [null, null, "O"],
+// ];
+// console.log(board[2][0]);
+
 // let email = prompt("Masukan Email!").toLowerCase();
 // let password = prompt("Masukan Password!").toLowerCase();
 
@@ -87,8 +255,26 @@
 // alert("Tebakan kamu benar!");
 // console.log(targetNum);
 
-const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-angka.forEach(function (n) {
-  console.log(n * n);
-});
+// angka.forEach(function (n) {
+//   console.log(n * n);
+// });
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   fullName: function () {
+//     return `${this.firstName} ${this.lastName}`;
+//   },
+// };
+
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8];
+// const nama = ["Gede", "Dewo", "Wahyu", "Mustika", "Wiwaha"];
+// angka.push(9, 10);
+// console.log(Math.max(...angka));
+// console.log(...angka, ...nama);
+// console.log(`${angka} || ${nama}`);
+
+// const orang = { nama: "Gede", umur: `Dewo`, alamat: `Wahyu` };
+// const user = { ...orang, id: 27, password: "abcd" };
