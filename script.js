@@ -72,69 +72,73 @@
 // }
 
 //-----STRUCTURE ARRAY-----
-let iniKosong = [];
-let kumpulanHuruf = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
-let kumpulanAngka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let iniCampuran = [true, 1, "string", null];
-console.log("----------------------------");
-console.log(iniKosong);
-console.log(kumpulanHuruf);
-console.log(kumpulanAngka);
-console.log(iniCampuran);
-console.log("----------------------------");
-console.log(iniKosong[0]);
-console.log(kumpulanHuruf[0]);
-console.log(kumpulanHuruf[2]);
-console.log(kumpulanAngka[4]);
-console.log(kumpulanAngka[6]);
-console.log(iniCampuran[0]);
-console.log(iniCampuran[3]);
-console.log("----------------------------");
-iniKosong[0] = 500;
-iniKosong[2] = 1000;
-iniKosong[8] = 1500;
-console.log(iniKosong[8]);
-kumpulanHuruf[0] = "Z";
-console.log(kumpulanHuruf[0]);
-kumpulanAngka[6] = 100;
-console.log(kumpulanAngka[6]);
-iniCampuran[0] = false;
-console.log(iniCampuran[0]);
-console.log("----------------------------");
-console.log(iniKosong);
-console.log(kumpulanHuruf);
-console.log(kumpulanAngka);
-console.log(iniCampuran);
+// let iniKosong = [];
+// let kumpulanHuruf = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+// let kumpulanAngka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let iniCampuran = [true, 1, "string", null];
+// console.log("----------------------------");
+//---MENAMPILKAN SEMUA INDEX DARI TIAP ARRAY---
+// console.log(iniKosong);
+// console.log(kumpulanHuruf);
+// console.log(kumpulanAngka);
+// console.log(iniCampuran);
+// console.log("----------------------------");
+//---MENAMPILKAN INDEX TERTENTU DARI TIAP ARRAY---
+// console.log(iniKosong[0]);
+// console.log(kumpulanHuruf[0]);
+// console.log(kumpulanHuruf[2]);
+// console.log(kumpulanAngka[4]);
+// console.log(kumpulanAngka[6]);
+// console.log(iniCampuran[0]);
+// console.log(iniCampuran[3]);
+// console.log("----------------------------");
+//---MENGUBAH & MENAMBAH INDEX TERTENTU DARI TIAP ARRAY---
+// iniKosong[0] = 500;
+// iniKosong[2] = 1000;
+// iniKosong[8] = 1500;
+// console.log(iniKosong[8]);
+// kumpulanHuruf[0] = "Z";
+// console.log(kumpulanHuruf[0]);
+// kumpulanAngka[6] = 100;
+// console.log(kumpulanAngka[6]);
+// iniCampuran[0] = false;
+// console.log(iniCampuran[0]);
+// console.log("----------------------------");
+//---MENAMPILKAN SEMUA HASIL AKHIR INDEX DARI TIAP ARRAY---
+// console.log(iniKosong);
+// console.log(kumpulanHuruf);
+// console.log(kumpulanAngka);
+// console.log(iniCampuran);
 
 //-----PERSONAL EXPERIMENT-----
 //---EXPERIMENT 01---
 // let nama = [];
-// for (let i = 0; i < 3; i++) {
-//   nama[i] = prompt("Masukkan Nama Ke-" + i);
+// for (let i = 1; i < 3; i++) {
+//   nama[i] = prompt("Masukan Nama Ke-" + i);
 // }
-// let tampilNama = prompt("Tampilkan Nama");
-// console.log(nama[tampilNama]);
+// let tampilNama = prompt("Tampilkan Nama Ke?");
+// alert(nama[tampilNama]);
 //---EXPERIMENT 02---
 // let id;
 // let email = [];
 // let password = [];
 // for (let i = 0; i <= 2; ) {
-//   id = prompt("Register Masukkan ID");
-//   email[id] = prompt("Register Masukkan Email");
-//   password[id] = prompt("Masukkan Password");
+//   id = prompt("Masukan ID Register!");
+//   email[id] = prompt("Masukan Email Register!");
+//   password[id] = prompt("Masukan Password Register!");
 //   let pilihan = prompt(
-//     "Untuk Login Masukkan (Y), Untuk Register Masukkan (N)"
+//     "Untuk Login Ketik (Y) || Untuk Register Lagi Ketik (N)"
 //   ).toUpperCase();
 //   if (pilihan === "N") {
 //     i++;
 //   } else {
-//     id = prompt("Masukkan ID");
-//     let logEmail = prompt("Masukkan Email");
-//     let logPassword = prompt("Masukkan Password");
+//     id = prompt("Masukan ID Login!");
+//     let logEmail = prompt("Masukan Email Login!");
+//     let logPassword = prompt("Masukan Password Login!");
 //     if (logEmail === email[id] && logPassword === password[id]) {
-//       alert("Login Berhasil");
+//       alert("Login Berhasil!");
 //     } else {
-//       alert("Login Gagal");
+//       alert("Login Gagal!");
 //     }
 //   }
 // }
