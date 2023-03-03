@@ -110,8 +110,133 @@
 // console.log(kumpulanAngka);
 // console.log(iniCampuran);
 
+//-----METHOD ARRAY-----
+// let barbel = [];
+// barbel.push(20, 15, 10, 5);
+// console.log(barbel);
+// console.log("----------------------------");
+// barbel.push(2.5, 0);
+// console.log(barbel);
+// console.log("----------------------------");
+// barbel.pop();
+// console.log(barbel);
+// console.log("----------------------------");
+// barbel.shift();
+// console.log(barbel);
+// console.log("----------------------------");
+// barbel.unshift(50);
+// console.log(barbel);
+// console.log("----------------------------");
+// let array1 = ["intan", "dewo"];
+// console.log(array1);
+// let array2 = ["mei", "botak"];
+// console.log(array2);
+// let array3 = array2.concat(array1);
+// console.log(array3);
+// console.log("----------------------------");
+// let bilangan = [100, 199, 2008, 313, 2125];
+// console.log(bilangan.join("/"));
+// const outfit = ["celana", "baju", "blouse", "tanktop"];
+// console.log(outfit.join(" - "));
+
+//-----MULTIDIMENSIONAL ARRAY-----
+// const board = [
+//   ["O", null, "X"],
+//   ["X", "O", "X"],
+//   [null, null, "O"],
+// ];
+// console.log(board[0]);
+// console.log(board[1]);
+// console.log(board[2]);
+// console.log("----------------------------");
+// console.log(board[0][2]);
+// console.log(board[1][0]);
+// console.log(board[2][1]);
+
+//-----OBJECT DATA STRUCTURES-----
+// const orang = {
+//   nama: "Skydazmc",
+//   alamat: "Bandung",
+//   tanggal: "16-08-2015",
+// };
+// console.log(orang);
+// console.log(orang.nama);
+// console.log(orang.alamat);
+// console.log(orang.tanggal);
+// console.log("----------------------------");
+// orang.nama = "Landensaki";
+// orang.alamat = "Bali";
+// orang.tanggal = "03-03-2023";
+// orang.kodePos = 40191;
+// console.log(orang);
+
+//-----MULTIDIMENSIONAL OBJECT-----
+// const board = {
+//   A1: { B1: "O", B2: null, B3: "X" },
+//   A2: { B1: "x", B2: "O", B3: "X" },
+//   A3: { B1: null, B2: null, B3: "O" },
+// };
+// console.log(board.A1);
+// console.log(board.A2);
+// console.log(board.A3);
+// console.log("----------------------------");
+// console.log(board.A1.B3);
+// console.log(board.A2.B1);
+// console.log(board.A3.B2);
+
+//-----ARRAY + OBJECT-----
+// const camera = [
+//   { product: "Sony A6400", price: 9000000, qty: 10 },
+//   { product: "Nikon D7200", price: 6000000, qty: 30 },
+//   { product: "Nikon D3200", price: 5000000, qty: 5 },
+// ];
+// console.log(camera[0]);
+// console.log(camera[1]);
+// console.log(camera[2]);
+// console.log("----------------------------");
+// console.log(camera[0].product);
+// console.log(camera[1].price);
+// console.log(camera[2].qty);
+
+//-----OBJECT + ARRAY-----
+// const camera = {
+//   array1: ["Sony A6400", 9000000, 10],
+//   array2: ["Nikon D7200", 6000000, 30],
+//   array3: ["Nikon D3200", 5000000, 5],
+// };
+// console.log(camera.array1);
+// console.log(camera.array2);
+// console.log(camera.array3);
+// console.log("----------------------------");
+// console.log(camera.array1[0]);
+// console.log(camera.array2[1]);
+// console.log(camera.array3[2]);
+
+//-----LOOPING-----
+//---FOR---
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`LOOPING FOR ${i}`);
+// }
+//---WHILE---
+// let i = 1;
+// while (i <= 10) {
+//   console.log(`LOOPING WHILE ${i}`);
+//   i++;
+// }
+//---FOR OF---{
+// const number = [1, 2, 3];
+// for (let letNumber of number) {
+//   console.log(`LOOPING FOR OF ${letNumber}`);
+// }
+//---FOR IN---
+// const number = { SATU: 1, DUA: 2, TIGA: 3 };
+// for (let letNumber in number) {
+//   console.log(`LOOPING FOR IN ${letNumber} : ${number[letNumber]}`);
+// }
+
 //-----PERSONAL EXPERIMENT-----
 //---EXPERIMENT 01---
+//TAMPILKAN INDEX PADA ARRAY
 // let nama = [];
 // for (let i = 1; i < 3; i++) {
 //   nama[i] = prompt("Masukan Nama Ke-" + i);
@@ -119,6 +244,7 @@
 // let tampilNama = prompt("Tampilkan Nama Ke?");
 // alert(nama[tampilNama]);
 //---EXPERIMENT 02---
+//REGISTRASI
 // let id;
 // let email = [];
 // let password = [];
@@ -142,83 +268,9 @@
 //     }
 //   }
 // }
-
-// let barbel = [];
-// barbel.push(20, 15, 10, 5);
-// barbel.push(2.5, 0);
-// barbel.pop();
-// barbel.shift();
-// barbel.unshift(20);
-
-// let array1 = ["intan", "dewo"];
-// let array2 = ["mei", "botak"];
-// let array3 = array2.concat(array1);
-
-// console.log(array3);
-
-// let bilangan = [100, 199, 2008, 313, 2125];
-
-// console.log(bilangan.join("/"));
-
-// const outfit = ["celana", "baju", "blouse", "tanktop"];
-// console.log(outfit);
-
-// const board = [
-//   ["O", null, "O"],
-//   ["X", "X", "X"],
-//   [null, null, "O"],
-// ];
-// console.log(board[2][0]);
-
-// let email = prompt("Masukan Email!").toLowerCase();
-// let password = prompt("Masukan Password!").toLowerCase();
-
-// if (email == "gdwmw@gmail.com" && password == "123456") {
-//   alert("Login Berhasil!");
-// } else {
-//   alert("Login Gagal!");
-// }
-
-// const orang = {
-//   nama: "Intan Meilani Nugraha",
-//   alamat: "Bandung",
-//   tanggal: "16-08-2015",
-//   lokasi: {
-//     kota: "Bandung",
-//     kelurahan: "Bandung",
-//   },
-//   noRumah: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-// };
-
-// orang.nama = "Gede Dewo Wahyu M.W";
-// orang.kodePos = 40191;
-
-// console.log(orang);
-
-// const koding = [
-//   { product: "Sony A6400", price: 1000000, qty: 10 },
-//   { product: "Nikon D7200", price: 1000000, qty: 10 },
-//   { product: "Nikon D3200", price: 1000000, qty: 10 },
-// ];
-
-// console.log(koding[0].product);
-
-// let i = 1;
-// while (i <= 10) {
-//   console.log(i);
-//   i++;
-// }
-
-// for (let i = 1; i <= 10; i++) {
-//   console.log(i);
-// }
-
-// let ukuranSpatu = [3213, 453, 6445, 67, 543, 876, 2432, 654, 654, 4325];
-// for (let i = 0; i < ukuranSpatu.length; i++) {
-//   console.log("No.", i + 1, ukuranSpatu[i]);
-// }
-
-// const nama = ["Dewo", "Intan", "Meilanie"];
+//---EXPERIMENT 03---
+//SOAL PILIHAN GANDA
+// const nama = ["Landensaki", "Skydazmc", "HobbiTxy"];
 // const buah = [
 //   ["Apel", "Mangga", "Pepaya"],
 //   ["Melon", "Jambu", "Nanas"],
@@ -231,7 +283,8 @@
 //     console.log("    " + abc[j] + ". " + buah[i][j]);
 //   }
 // }
-
+//---EXPERIMENT 04---
+//KATA KUNCI UNTUK STOP LOOPING
 // let i = 1;
 // while (i <= 10) {
 //   let kataLunci = prompt("Masukan kata kunci!").toLowerCase();
@@ -241,7 +294,8 @@
 //   i++;
 // }
 // alert("Berhasil Stop!");
-
+//---EXPERIMENT 05---
+//TEBAK ANGKA
 // let maximal = parseInt(prompt("Masukan nilai maksimal!"));
 // while (!maximal) {
 //   maximal = parseInt(prompt("Masukan nilai maksimal!"));
@@ -258,6 +312,33 @@
 // }
 // alert("Tebakan kamu benar!");
 // console.log(targetNum);
+
+//-----FUNCTION-----
+// function lemparDadu1() {
+//   console.log(Math.floor(Math.random() * 6) + 1);
+// }
+// lemparDadu1();
+// console.log("----------------------------");
+// //---FUNCTION PARAMETER---
+// function lemparDadu2(a, b) {
+//   console.log(Math.floor(Math.random() * a) + b);
+// }
+// lemparDadu2(15, 20);
+// console.log("----------------------------");
+// //---FUNCTION DEFAULT VALUE---
+// function lemparDadu3(a, b = 11) {
+//   console.log(Math.floor(Math.random() * a) + b);
+// }
+// lemparDadu3(10);
+// lemparDadu3(10, 30);
+// console.log("----------------------------");
+// //---FUNCTION RETURN---
+// function lemparDadu4(a, b) {
+//   let dadu = Math.floor(Math.random() * a) + b;
+//   return dadu;
+// }
+// let hasil = lemparDadu4(10, 8);
+// console.log(hasil);
 
 // const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
