@@ -319,26 +319,132 @@
 // }
 // lemparDadu1();
 // console.log("----------------------------");
-// //---FUNCTION PARAMETER---
+//---FUNCTION PARAMETER---
 // function lemparDadu2(a, b) {
 //   console.log(Math.floor(Math.random() * a) + b);
 // }
 // lemparDadu2(15, 20);
 // console.log("----------------------------");
-// //---FUNCTION DEFAULT VALUE---
+//---FUNCTION DEFAULT VALUE---
 // function lemparDadu3(a, b = 11) {
 //   console.log(Math.floor(Math.random() * a) + b);
 // }
 // lemparDadu3(10);
 // lemparDadu3(10, 30);
+
+//-----SCOPE VARIABEL (VAR)-----
+//---FUNCTION---
+// var funVarScope = 1; //SUCCESS
+// function testScope() {
+//   //var funVarScope = 1; //UNCAUGHT
+//   funVarScope = 2;
+// }
+// testScope();
+// console.log(funVarScope);
 // console.log("----------------------------");
-// //---FUNCTION RETURN---
+//---IF---
+// var tinggi = 10;
+// var funVarScope = 1; //SUCCESS
+// if (tinggi === 10) {
+//   //var funVarScope = 1; //SUCCESS
+//   funVarScope = 2;
+// }
+// console.log(funVarScope);
+// console.log("----------------------------");
+//---FOR---
+// var funVarScope = 1; //SUCCESS
+// for (let i = 1; i <= 5; i++) {
+//   //var funVarScope = 1; //SUCCESS
+//   funVarScope = i;
+// }
+// console.log(funVarScope);
+
+//-----SCOPE VARIABEL (LET)-----
+//---FUNCTION---
+// let funLetScope = 1; //SUCCESS
+// function testScope() {
+//   //let funLetScope = 1; //UNCAUGHT
+//   funLetScope = 2;
+// }
+// testScope();
+// console.log(funLetScope);
+// console.log("----------------------------");
+//---IF---
+// let tinggi = 10;
+// let funLetScope = 1; //SUCCESS
+// if (tinggi === 10) {
+//   //let funLetScope = 1; //UNCAUGHT
+//   funLetScope = 2;
+// }
+// console.log(funLetScope);
+// console.log("----------------------------");
+//---FOR---
+// let funLetScope = 1; //SUCCESS
+// for (let i = 1; i <= 5; i++) {
+//   //let funLetScope = 1; //UNCAUGHT
+//   funLetScope = i;
+// }
+// console.log(funLetScope);
+
+//-----SCOPE VARIABEL (CONST)-----
+//---FUNCTION---
+// const funConScope = 1; //SUCCESS
+// function testScope() {
+//   //const funConScope = 1; //UNCAUGHT
+// }
+// testScope();
+// console.log(funConScope);
+// console.log("----------------------------");
+//---IF---
+// const tinggi = 10;
+// const funConScope = 1; //SUCCESS
+// if (tinggi === 10) {
+//   //const funConScope = 1; //UNCAUGHT
+// }
+// console.log(funConScope);
+// console.log("----------------------------");
+//---FOR---
+// const funConScope = 1; //SUCCESS
+// for (let i = 1; i <= 5; i++) {
+//   //const funConScope = 1; //UNCAUGHT
+// }
+// console.log(funConScope);
+
+//-----LEXICAL SCOPE-----
+// function funcLuar() {
+//   const nilaiLuar = "Ini Luar!";
+//   function funcDalam() {
+//     let nilaiDalam = `Di dalam mengambil ${nilaiLuar}`;
+//     console.log(nilaiDalam);
+//   }
+//   funcDalam();
+// }
+// funcLuar();
+
+//-----FUNCTION EXPRESSIONS-----
 // function lemparDadu4(a, b) {
 //   let dadu = Math.floor(Math.random() * a) + b;
 //   return dadu;
 // }
 // let hasil = lemparDadu4(10, 8);
-// console.log(hasil);
+// console.log(hasil); //SUCCESS
+// console.log("----------------------------");
+// function lemparDadu4(a, b) {
+//   let dadu = Math.floor(Math.random() * a) + b;
+// }
+// let hasil = lemparDadu4(10, 8);
+// console.log(hasil); //UNDEFINED
+
+//-----FUNCTION AS ARGUMENT-----
+// function duaKali(func) {
+//   func();
+//   func();
+// }
+// function lemparDadu() {
+//   const nilai = Math.floor(Math.random() * 6) + 1;
+//   console.log(nilai);
+// }
+// duaKali(lemparDadu);
 
 // const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
