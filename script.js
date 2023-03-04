@@ -486,7 +486,7 @@
 // const saya = {
 //   nama: "Landensaki",
 //   umur: 17,
-//   hobi: "makan",
+//   hobi: "Makan",
 //   kitaKenalan: function () {
 //     return `Hallo perkenalkan nama saya ${this.nama}, hobi saya ${this.hobi} dan saya berumur ${this.umur} tahun.`;
 //   },
@@ -516,6 +516,50 @@
 // tryCatch(1);
 
 //-----FOREACH METHOD-----
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// angka.forEach(function (n) {
+//   console.log(n * n);
+// });
+// console.log("----------------------------");
+// const saya = [
+//   {
+//     nama: "Landensaki",
+//     umur: 17,
+//     hobi: "Makan",
+//     kitaKenalan: function () {
+//       return `Hallo perkenalkan nama saya ${this.nama}, hobi saya ${this.hobi} dan saya berumur ${this.umur} tahun.`;
+//     },
+//   },
+//   {
+//     nama: "Skydazmc",
+//     umur: 20,
+//     hobi: "Tidur",
+//     kitaKenalan: function () {
+//       return `Hallo perkenalkan nama saya ${this.nama}, hobi saya ${this.hobi} dan saya berumur ${this.umur} tahun.`;
+//     },
+//   },
+// ];
+// saya.forEach(function (s) {
+//   console.log(
+//     `Nama : ${s.nama} || Umur : ${s.umur} || Hobi : ${
+//       s.hobi
+//     } || Kenalan : ${s.kitaKenalan()}`
+//   );
+// });
+
+//-----MAP METHOD-----
+// const hurufKecil = ["a", "b", "c", "d", "e", "f"];
+// const keHurufBesar = hurufKecil.map(function (s) {
+//   return s.toUpperCase();
+// });
+// console.log(hurufKecil);
+// console.log(keHurufBesar);
+
+//-----ARROW FUNCTION-----
+// const perpangkatan = (i) => {
+//   return i * i;
+// };
+// console.log(perpangkatan(Math.random() + 1 * 5));
 
 // const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
