@@ -461,6 +461,20 @@
 // }
 // const hasil = hasilnyaAdalahFunction();
 // console.log(hasil());
+// console.log("----------------------------");
+// function cekLogin(username, password) {
+//   if (username === "admin" && password === "1234") {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// let check = cekLogin("admin", "1234");
+// if (check === true) {
+//   console.log("Login berhasil!");
+// } else {
+//   console.log("Username atau password salah.");
+// }
 
 //-----CREATE METHOD-----
 // const myMethod = {
@@ -556,10 +570,31 @@
 // console.log(keHurufBesar);
 
 //-----ARROW FUNCTION-----
-// const perpangkatan = (i) => {
+// const add = (i) =>
+//   Math.random() + i * Math.random() * i + Math.random() + i * (i * i);
+// console.log(add(5));
+// console.log("----------------------------");
+// const singleLine = (i) => {
 //   return i * i;
 // };
-// console.log(perpangkatan(Math.random() + 1 * 5));
+// console.log(singleLine(20));
+// console.log("----------------------------");
+// const multipleLineReturn = (a) => {
+//   z = Math.random() + a * Math.random() * 2;
+//   a = Math.random() + z * (z * z);
+//   return a;
+// };
+// console.log(multipleLineReturn(10));
+
+//-----SETTIMEOUT & SETINTERVAL-----
+setTimeout(() => {
+  console.log("TimeOut 3 Detik");
+}, 3000);
+i = 1;
+setInterval(() => {
+  console.log(`Interval ${i}`);
+  i++;
+}, 3000);
 
 // const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
