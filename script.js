@@ -446,6 +446,77 @@
 // }
 // duaKali(lemparDadu);
 
+//-----FUNCTION RETURN VALUE FUNCTION-----
+// function hasilnyaAdalahFunction() {
+//   const rand = Math.random();
+//   if (rand > 0.1) {
+//     return function () {
+//       console.log("Selamat, angkanya lebih besar!");
+//     };
+//   } else {
+//     return function () {
+//       console.log("Maaf, mungkin bisa coba lagi!");
+//     };
+//   }
+// }
+// const hasil = hasilnyaAdalahFunction();
+// console.log(hasil());
+
+//-----CREATE METHOD-----
+// const myMethod = {
+//   pertambahan: function (a, b) {
+//     return a + b;
+//   },
+//   pengurangan: function (a, b) {
+//     return a - b;
+//   },
+//   perkalian: function (a, b) {
+//     return a * b;
+//   },
+//   pembagian: function (a, b) {
+//     return a / b;
+//   },
+// };
+// console.log(myMethod.pertambahan(10, 10));
+// console.log(myMethod.pengurangan(10, 10));
+// console.log(myMethod.perkalian(10, 10));
+// console.log(myMethod.pembagian(10, 10));
+
+//-----THIS-----
+// const saya = {
+//   nama: "Landensaki",
+//   umur: 17,
+//   hobi: "makan",
+//   kitaKenalan: function () {
+//     return `Hallo perkenalkan nama saya ${this.nama}, hobi saya ${this.hobi} dan saya berumur ${this.umur} tahun.`;
+//   },
+// };
+// console.log(saya.kitaKenalan());
+
+//-----TRY AND CATCH-----
+// console.log(saya.kitaKenalan()); //BLOCKED
+// try {
+//   saya.kitaKenalan();
+// } catch {
+//   console.log("Terjadi kesalahan");
+// }
+// console.log(
+//   "try and catch tidak akan membelok proses saat terjadi kesalahan/error."
+// );
+// console.log("----------------------------");
+// function tryCatch(isi) {
+//   try {
+//     console.log(isi.toUpperCase());
+//   } catch (error) {
+//     console.log(error);
+//     console.log("Terjadi kesalahan");
+//   }
+// }
+// tryCatch("string");
+// tryCatch(1);
+
+//-----FOREACH METHOD-----
+
 // const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // angka.forEach(function (n) {
