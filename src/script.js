@@ -688,27 +688,3 @@
 //   return `${product} - ${price} - ${qty}`;
 // });
 // console.log(lsCamera);
-
-// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-// angka.forEach(function (n) {
-//   console.log(n * n);
-// });
-
-// const person = {
-//   firstName: "John",
-//   lastName: "Doe",
-//   fullName: function () {
-//     return `${this.firstName} ${this.lastName}`;
-//   },
-// };
-
-// const angka = [1, 2, 3, 4, 5, 6, 7, 8];
-// const nama = ["Gede", "Dewo", "Wahyu", "Mustika", "Wiwaha"];
-// angka.push(9, 10);
-// console.log(Math.max(...angka));
-// console.log(...angka, ...nama);
-// console.log(`${angka} || ${nama}`);
-
-// const orang = { nama: "Gede", umur: `Dewo`, alamat: `Wahyu` };
-// const user = { ...orang, id: 27, password: "abcd" };
