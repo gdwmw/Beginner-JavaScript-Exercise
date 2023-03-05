@@ -8,6 +8,38 @@
 //   alert("ELSE STATEMENT");
 // }
 
+//-----TENARY OPERATOR-----
+// const nilai = 20;
+// const aksi = nilai >= 75 ? "Selamat anda lulus" : "Remedial!";
+// console.log(aksi);
+
+//-----NULLISH COALESCING OPERATOR-----
+//BEFORE
+// let parameter;
+// let data = parameter;
+// if (data === undefined || data === null) {
+//   data = "Default Value";
+// }
+// console.log(data);
+//AFTER
+// let parameter;
+// let data = parameter ?? "Default Value";
+// console.log(data);
+
+//-----OPTIONAL CHAINING-----
+// const person = {
+//   address: {
+//     country: "Indonesia",
+//   },
+// };
+//BEFORE
+// if(person.address !== undefined && person.address !== null){
+//     country = person.address.country;
+// }
+//AFTER
+// let country = person?.address?.country;
+// document.writeln(`<p>${country}</p>`);
+
 //-----NESTING CONDITION-----
 // const isiPassword = prompt("Silahkan Isi Password!");
 // if (isiPassword.length >= 6) {
