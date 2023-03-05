@@ -622,11 +622,72 @@
 // console.log(i);
 // console.log(total);
 
-//-----SPREAD-----
+//-----SPREAD OPERATOR-----
 // const angka = [1, 2, 3, 4, 5, 6, 7, 8];
+// const angkaLanjut = [9, 10, 11, 12, 13, 14, 15];
 // console.log(Math.max(angka)); //NaN
 // console.log(Math.min(...angka)); //1
 // console.log(Math.max(...angka)); //4
+// console.log("----------------------------");
+// const gabungKan = [...angka, ...angkaLanjut];
+// console.log(gabungKan);
+
+//-----MERGE OBJECT WITH SPREAD OPERATOR-----
+// const user = { nama: "Landensaki", umur: 20 };
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8];
+// const userDb = { user, ...angka, role: "user" };
+// console.log(userDb);
+
+//-----REST PARAMETER-----
+// const sumAll = (...nums) => {
+//   return nums.reduce((total, el) => total + el);
+// };
+// console.log(sumAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+// console.log("----------------------------");
+// const peserta = ["landensaki", "skydazmc", "hobbitxy", "imurphy", "lexa"];
+// const pemenang = (gold, silver, bronze, ...sisa) => {
+//   console.log(`Mendali gold diraih ${gold}`);
+//   console.log(`Mendali silver diraih ${silver}`);
+//   console.log(`Mendali bronze diraih ${bronze}`);
+//   console.log(`Peserta lainnya : ${sisa}`);
+// };
+// pemenang(...peserta);
+
+//-----DESTRUCTING-----
+// const peserta = ["batman", "ironman", "spongebob", "flash", "thor", "zeus"];
+// const [satu, dua, tiga, ...sisa] = peserta;
+// console.log(satu);
+// console.log(dua);
+// console.log(tiga);
+// console.log(sisa);
+// console.log("----------------------------");
+// const camera = { product: "Sony A6400", price: 9000000, qty: 10 };
+// const { product, price, qty, phone01 = "081847284728" } = camera;
+// console.log(product);
+// console.log(price);
+// console.log(qty);
+// console.log(phone01);
+// console.log("----------------------------");
+// const { product: a, price: b, qty: c, phone02 = "081847284728" } = camera;
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(phone02);
+// console.log("----------------------------");
+// const destructing = ({ product, price, qty }) => {
+//   return `${product} - ${price} - ${qty}`;
+// };
+// console.log(destructing(camera));
+// console.log("----------------------------");
+// const listCamera = [
+//   { product: "Sony A6400", price: 9000000, qty: 10 },
+//   { product: "Nikon D7200", price: 6000000, qty: 30 },
+//   { product: "Nikon D3200", price: 5000000, qty: 5 },
+// ];
+// const lsCamera = listCamera.map(({ product, price, qty }) => {
+//   return `${product} - ${price} - ${qty}`;
+// });
+// console.log(lsCamera);
 
 // const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
