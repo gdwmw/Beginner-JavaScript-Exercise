@@ -587,14 +587,46 @@
 // console.log(multipleLineReturn(10));
 
 //-----SETTIMEOUT & SETINTERVAL-----
-setTimeout(() => {
-  console.log("TimeOut 3 Detik");
-}, 3000);
-i = 1;
-setInterval(() => {
-  console.log(`Interval ${i}`);
-  i++;
-}, 3000);
+// setTimeout(() => {
+//   console.log("TimeOut 3 Detik");
+// }, 3000);
+// i = 1;
+// setInterval(() => {
+//   console.log(`Interval ${i}`);
+//   i++;
+// }, 3000);
+
+//-----FILTER-----
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const ganjil = angka.filter((n) => n % 2 === 1);
+// console.log(ganjil);
+
+//-----EVERY & SOME-----
+// const kata01 = ["saya", "kata", "kamu"];
+// const kata02 = ["itu", "kata", "kamu"];
+// console.log(kata01.every((kata) => kata.length === 4)); //TRUE
+// console.log(kata02.every((kata) => kata.length === 4)); //FALSE
+// console.log(kata01.some((kata) => kata.length === 4)); //TRUE
+// console.log(kata02.some((kata) => kata.length === 4)); //TRUE
+
+//-----REDUCE-----
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const hasilTotal = angka.reduce((a, b) => a + b);
+// console.log(hasilTotal);
+//SAME AS
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let total = 0;
+// for (var i of angka) {
+//   total += i;
+// }
+// console.log(i);
+// console.log(total);
+
+//-----SPREAD-----
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8];
+// console.log(Math.max(angka)); //NaN
+// console.log(Math.min(...angka)); //1
+// console.log(Math.max(...angka)); //4
 
 // const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
