@@ -1,2 +1,2 @@
-# Latihan-JavaScript-GDWMW
+# Beginner-JavaScript-Exercise
  
