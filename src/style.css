@@ -1,0 +1,11 @@
+h1,
+p {
+    text-align: center;
+}
+
+.jsimg {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
