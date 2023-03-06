@@ -8,7 +8,7 @@ heading.style.color = "black";
 const para = document.querySelector("#para");
 para.setAttribute("class", "para");
 para.innerHTML =
-  "Belajar dasar Bahasa Pemrograman JavaScript, DOM, Asynchronous, AJAX, dan API.";
+  "Latihan Bahasa Pemrograman JavaScript, DOM, Asynchronous, AJAX, dan API.";
 // console.log(para.getAttribute("id"));
 
 const img = document.querySelector("#jsimg");
