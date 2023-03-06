@@ -202,6 +202,26 @@
 // orang.kodePos = 40191;
 // console.log(orang);
 
+//-----GETTER & SETTER-----
+// const person = {
+//     firstName: "Eko",
+//     lastName: "Khannedy",
+//     get fullName(){
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+//     set fullName(value){
+//         const array = value.split(" ");
+//         this.firstName = array[0];
+//         this.lastName = array[1];
+//     }
+// };
+// person.fullName = "Budi Nugraha";
+// console.table(person);
+// person.fullName = "Joko Morro";
+// console.table(person);
+// person.fullName = "Eko Khannedy";
+// console.table(person);
+
 //-----MULTIDIMENSIONAL OBJECT-----
 // const board = {
 //   A1: { B1: "O", B2: null, B3: "X" },
@@ -271,6 +291,32 @@
 // for (let letNumber in number) {
 //   console.log(`LOOPING FOR IN ${letNumber} : ${number[letNumber]}`);
 // }
+
+//-----FACTORIAL RECURSIVE-----
+//BEFORE
+// function factorial(value){
+//     let result = 1;
+//     for (let i = 1; i <= value; i++) {
+//         result *= i;
+//     }
+//     return result;
+// }
+// console.info(factorial(10));
+//AFTER
+// function factorialRecursive(value){
+//     if(value === 1){
+//         return 1;
+//     }else{
+//         return value * factorialRecursive(value - 1);
+//     }
+// }
+// console.info(factorialRecursive(10));
+// factorialRecursive(5);
+// 5 * factorialRecursive(4)
+// 5 * 4 * factorialRecursive(3)
+// 5 * 4 * 3 * factorialRecursive(2)
+// 5 * 4 * 3 * 2 * factorialRecursive(1)
+// 5 * 4 * 3 * 2 * 1
 
 //-----BREAK & CONTINUE-----
 // let counter = 1;
@@ -476,6 +522,32 @@
 //   funcDalam();
 // }
 // funcLuar();
+
+//-----CLOSURE-----
+// function createAdder(value){
+//     const owner = "Eko";
+
+//     function add(param){
+//         console.info(owner);
+//         return value + param;
+//     }
+
+//     return add;
+// }
+// const addTwo = createAdder(2);
+// // function addTwo(param){
+// //     console.info("Eko");
+// //     return 2 + param;
+// // }
+// console.info(addTwo(10));
+// console.info(addTwo(20));
+// const addTen = createAdder(10);
+// // function addTwo(param){
+// //     console.info("Eko");
+// //     return 10 + param;
+// // }
+// console.info(addTen(10));
+// console.info(addTen(20));
 
 //-----FUNCTION EXPRESSIONS-----
 // function lemparDadu4(a, b) {
