@@ -255,6 +255,12 @@
 //   console.log(`LOOPING WHILE ${i}`);
 //   i++;
 // }
+//---DO WHILE---
+// let counter = 11;
+// do {
+//   console.log(`Perulangan (DO) ke ${counter}`);
+//   counter++;
+// } while (counter <= 10);
 //---FOR OF---{
 // const number = [1, 2, 3];
 // for (let letNumber of number) {
@@ -264,6 +270,24 @@
 // const number = { SATU: 1, DUA: 2, TIGA: 3 };
 // for (let letNumber in number) {
 //   console.log(`LOOPING FOR IN ${letNumber} : ${number[letNumber]}`);
+// }
+
+//-----BREAK & CONTINUE-----
+// let counter = 1;
+// while (true) {
+//   console.log(`Perulangan ke ${counter}`);
+//   counter++;
+
+//   if (counter > 10) {
+//     break;
+//   }
+// }
+// console.log("----------------------------");
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 === 0) {
+//     continue;
+//   }
+//   console.log(`Perulangan Ganjil ${i}`);
 // }
 
 //-----PERSONAL EXPERIMENT-----
