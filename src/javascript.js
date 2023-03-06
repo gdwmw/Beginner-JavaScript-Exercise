@@ -552,6 +552,18 @@
 // console.log(myMethod.perkalian(10, 10));
 // console.log(myMethod.pembagian(10, 10));
 
+//-----WITH STATEMENT-----
+// const orang = {
+//   nama: "Skydazmc",
+//   alamat: "Bandung",
+//   tanggal: "16-08-2015",
+// };
+// with (orang) {
+//   console.log(nama);
+//   console.log(alamat);
+//   console.log(tanggal);
+// }
+
 //-----THIS-----
 // const saya = {
 //   nama: "Landensaki",
