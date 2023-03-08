@@ -115,3 +115,16 @@ span.forEach((spanColor) => {
 // setInterval(() => {
 //   addStyle();
 // }, 1000);
+
+//-----KEY DOWN & KEY UP-----
+const keyUpDown = document.querySelector("input");
+keyUpDown.setAttribute("style", "display: block; margin: 20px auto 0 auto;");
+keyUpDown.addEventListener("keydown", (e) => {
+  const keyDetail = document.querySelector("#keydetail");
+  return (keyDetail.innerHTML = `Key Down - ${e.key}`);
+});
+keyUpDown.addEventListener("keyup", (e) => {
+  const keyDetail = document.querySelector("#keydetail");
+  return (keyDetail.innerHTML = `Key Up - ${e.key}`);
+});
+//-----END OF KEY DOWN & KEY UP-----
