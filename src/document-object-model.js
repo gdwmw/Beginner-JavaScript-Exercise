@@ -77,13 +77,14 @@ for (let i = 1; i <= 15; i++) {
   const setColorBtn = document.createElement("button");
   setColorBtn.setAttribute(
     "style",
-    "height: 100px; width: 100px; display: block; margin: 0 auto;"
+    "height: 100px; width: 100px; display: block; margin: 0 auto; border-radius: 0px;"
   );
   setColorBtn.innerHTML = "Click Me!";
   setColorBtn.addEventListener("click", changeColor);
   function changeColor() {
     setColorBtn.style.backgroundColor = fGenerateColor();
     setColorBtn.style.borderColor = fGenerateColor();
+    setColorBtn.style.color = fGenerateColor();
   }
   const span = document.createElement("span");
   span.innerHTML = `#${i}`;
