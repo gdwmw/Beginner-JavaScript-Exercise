@@ -1,15 +1,13 @@
-const heading = document.querySelector("#heading");
-heading.setAttribute("class", "heading");
-heading.innerHTML = "Beginner JavaScript Exercise";
-// console.log(heading.getAttribute("class"));
-heading.setAttribute("style", "color: red;");
-heading.style.color = "black";
+//-----TITLE-----
+const judul01 = document.querySelector("#judul01");
+judul01.innerHTML = "Beginner JavaScript Exercise";
 
-const para = document.querySelector("#para");
-para.setAttribute("class", "para");
-para.innerHTML =
+const p01 = document.querySelector("#p01");
+p01.innerHTML =
   "Latihan Bahasa Pemrograman JavaScript, DOM, Asynchronous, AJAX, dan API.";
+//-----END OF TITLE-----
 
+//-----BLACK LINE-----
 const cLine = document.querySelectorAll("#color-line");
 cLine.forEach((line) => {
   line.setAttribute(
@@ -17,37 +15,71 @@ cLine.forEach((line) => {
     "background-color: black; height: 2px; width: 100px; display: block; margin: 0 auto;"
   );
   line.setAttribute("class", "color-line");
-  line.classList.add("add-class");
 });
+//-----END OF BLACK LINE-----
 
-const img = document.querySelector("#jsimg");
-img.setAttribute("class", "jsimg");
-img.src = "public/favicon.svg";
-img.setAttribute("style", "display: block;");
-function fHU() {
-  if (img.style.display == "none") {
-    img.setAttribute("style", "display: block;");
+//-----IMAGE 01-----
+const img01 = document.querySelector("#img01");
+img01.src = "public/favicon.svg";
+img01.setAttribute("class", "img01");
+img01.setAttribute("style", "display: block;");
+function fBtn01() {
+  if (img01.style.display == "none") {
+    img01.setAttribute("style", "display: block;");
   } else {
-    img.setAttribute("style", "display: none;");
+    img01.setAttribute("style", "display: none;");
   }
 }
+//-----END OF IMAGE 01-----
 
-const hU = document.querySelector("#HU");
-hU.setAttribute("style", "display: block; margin: 30px auto 0 auto;");
+//-----BUTTON 01-----
+const btn01 = document.querySelector("#btn01");
+btn01.setAttribute("style", "display: block; margin: 30px auto 0 auto;");
+//-----END OF BUTTON 01-----
 
-const gambar = document.querySelector("#gambar");
-gambar.setAttribute("style", "column-count: 5; margin: 30px 0 0 0 ");
+//-----BUTTON 02-----
+const btn02 = document.querySelector("#btn02");
+btn02.setAttribute("style", "display: block; margin: 30px auto 0 auto;");
+btn02.addEventListener("click", fBtn01);
+btn02.addEventListener("click", fBtn03);
+//-----END OF BUTTON 02-----
+
+//-----IMAGE 02-----
+const img02 = document.querySelector("#img02");
+img02.setAttribute(
+  "style",
+  "column-count: 5; margin: 30px 0 0 0; display: block;"
+);
 for (let i = 1; i <= 15; i++) {
-  const newGambar = document.createElement("img");
-  newGambar.setAttribute("class", "margin");
-  newGambar.setAttribute("src", "public/favicon.svg");
-  newGambar.setAttribute(
+  const setimg02 = document.createElement("img");
+  setimg02.setAttribute("src", "public/favicon.svg");
+  setimg02.setAttribute(
     "style",
     "width: 100px; height: auto; display: block; margin: 0 auto;"
   );
   const span = document.createElement("span");
   span.innerHTML = `#${i}`;
   span.setAttribute("style", "display: block; text-align: center;");
-  gambar.appendChild(newGambar);
-  gambar.appendChild(span);
+  img02.appendChild(setimg02);
+  img02.appendChild(span);
 }
+//-----END OF IMAGE 02-----
+
+//-----BUTTON 01-----
+const btn03 = document.querySelector("#btn03");
+btn03.setAttribute("style", "display: block; margin: 30px auto 0 auto;");
+btn03.addEventListener("click", fBtn03);
+function fBtn03() {
+  if (img02.style.display == "none") {
+    img02.setAttribute(
+      "style",
+      "column-count: 5; margin: 30px 0 0 0; display: block;"
+    );
+  } else {
+    img02.setAttribute(
+      "style",
+      "column-count: 5; margin: 30px 0 0 0; display: none;"
+    );
+  }
+}
+//-----END OF BUTTON 01-----

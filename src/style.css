@@ -3,9 +3,10 @@ p {
     text-align: center;
 }
 
-.jsimg {
+.img01 {
     width: 50%;
     height: auto;
+    max-width: 500px;
     margin: 0 auto;
     display: block;
 }
