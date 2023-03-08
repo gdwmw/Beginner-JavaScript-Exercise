@@ -18,6 +18,29 @@ cLine.forEach((line) => {
 });
 //-----END OF BLACK LINE-----
 
+//-----GENERATE COLOR-----
+const generateColor = document.querySelector("#generate-color");
+generateColor.setAttribute(
+  "style",
+  "display: block; margin: 30px auto 0 auto;"
+);
+generateColor.addEventListener("click", fGenerateColor);
+generateColor.addEventListener("click", addStyle);
+function fGenerateColor() {
+  const r = Math.floor(Math.random() * 255);
+  const g = Math.floor(Math.random() * 255);
+  const b = Math.floor(Math.random() * 255);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+function addStyle() {
+  document.body.style.backgroundColor = fGenerateColor();
+  const rgbDetail = document.querySelector("#rgb-detail");
+  rgbDetail.setAttribute("style", "text-align: center;");
+  const detail = fGenerateColor();
+  rgbDetail.innerHTML = `${detail}`;
+}
+//-----END OF GENERATE COLOR-----
+
 //-----IMAGE 01-----
 const img01 = document.querySelector("#img01");
 img01.src = "public/favicon.svg";
