@@ -67,42 +67,44 @@ btn02.addEventListener("click", fBtn01);
 btn02.addEventListener("click", fBtn03);
 //-----END OF BUTTON 02-----
 
-//-----IMAGE 02-----
-const img02 = document.querySelector("#img02");
-img02.setAttribute(
+//-----COLOR-----
+const color = document.querySelector("#color");
+color.setAttribute(
   "style",
   "column-count: 5; margin: 30px 0 0 0; display: block;"
 );
 for (let i = 1; i <= 15; i++) {
-  const setimg02 = document.createElement("img");
-  setimg02.setAttribute("src", "public/favicon.svg");
-  setimg02.setAttribute(
+  const setColorBtn = document.createElement("button");
+  setColorBtn.setAttribute(
     "style",
-    "width: 100px; height: auto; display: block; margin: 0 auto;"
+    "height: 100px; width: 100px; display: block; margin: 0 auto;"
   );
+  setColorBtn.innerHTML = "Click Me!";
+  setColorBtn.addEventListener("click", changeColor);
+  function changeColor() {
+    setColorBtn.style.backgroundColor = fGenerateColor();
+    setColorBtn.style.borderColor = fGenerateColor();
+  }
   const span = document.createElement("span");
   span.innerHTML = `#${i}`;
-  span.setAttribute("style", "display: block; text-align: center;");
-  img02.appendChild(setimg02);
-  img02.appendChild(span);
+  span.setAttribute(
+    "style",
+    "display: block; text-align: center; margin: 10px 0;"
+  );
+  color.appendChild(setColorBtn);
+  color.appendChild(span);
 }
-//-----END OF IMAGE 02-----
+//-----END OF COLOR-----
 
-//-----BUTTON 01-----
+//-----BUTTON 03-----
 const btn03 = document.querySelector("#btn03");
 btn03.setAttribute("style", "display: block; margin: 30px auto 0 auto;");
 btn03.addEventListener("click", fBtn03);
 function fBtn03() {
-  if (img02.style.display == "none") {
-    img02.setAttribute(
-      "style",
-      "column-count: 5; margin: 30px 0 0 0; display: block;"
-    );
+  if (color.style.display == "none") {
+    color.style.display = "block";
   } else {
-    img02.setAttribute(
-      "style",
-      "column-count: 5; margin: 30px 0 0 0; display: none;"
-    );
+    color.style.display = "none";
   }
 }
-//-----END OF BUTTON 01-----
+//-----END OF BUTTON 03-----
