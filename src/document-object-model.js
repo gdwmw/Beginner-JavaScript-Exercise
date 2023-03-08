@@ -67,36 +67,6 @@ btn02.addEventListener("click", fBtn01);
 btn02.addEventListener("click", fBtn03);
 //-----END OF BUTTON 02-----
 
-//-----COLOR-----
-const color = document.querySelector("#color");
-color.setAttribute(
-  "style",
-  "column-count: 5; margin: 30px 0 0 0; display: block;"
-);
-for (let i = 1; i <= 15; i++) {
-  const setColorBtn = document.createElement("button");
-  setColorBtn.setAttribute(
-    "style",
-    "height: 100px; width: 100px; display: block; margin: 0 auto; border-radius: 0px;"
-  );
-  setColorBtn.innerHTML = "Click Me!";
-  setColorBtn.addEventListener("click", changeColor);
-  function changeColor() {
-    setColorBtn.style.backgroundColor = fGenerateColor();
-    setColorBtn.style.borderColor = fGenerateColor();
-    setColorBtn.style.color = fGenerateColor();
-  }
-  const span = document.createElement("span");
-  span.innerHTML = `#${i}`;
-  span.setAttribute(
-    "style",
-    "display: block; text-align: center; margin: 10px 0;"
-  );
-  color.appendChild(setColorBtn);
-  color.appendChild(span);
-}
-//-----END OF COLOR-----
-
 //-----BUTTON 03-----
 const btn03 = document.querySelector("#btn03");
 btn03.setAttribute("style", "display: block; margin: 30px auto 0 auto;");
@@ -109,3 +79,39 @@ function fBtn03() {
   }
 }
 //-----END OF BUTTON 03-----
+
+//-----COLOR-----
+const color = document.querySelector("#color");
+color.setAttribute(
+  "style",
+  "column-count: 5; margin: 30px 0 0 0; display: block;"
+);
+const setColorBtn = document.querySelectorAll(".btncolor");
+setColorBtn.forEach((btnColor) => {
+  btnColor.setAttribute(
+    "style",
+    "height: 100px; width: 100px; display: block; margin: 0 auto; border-radius: 0px;"
+  );
+  btnColor.innerHTML = "Click Me!";
+  btnColor.addEventListener("click", changeColor);
+  // setInterval(() => {
+  //   changeColor();
+  // }, 1000);
+  function changeColor() {
+    btnColor.style.backgroundColor = fGenerateColor();
+    btnColor.style.borderColor = fGenerateColor();
+    btnColor.style.color = fGenerateColor();
+  }
+});
+const span = document.querySelectorAll(".spancolor");
+span.forEach((spanColor) => {
+  spanColor.setAttribute(
+    "style",
+    "display: block; text-align: center; margin: 10px 0;"
+  );
+});
+//-----END OF COLOR-----
+
+// setInterval(() => {
+//   addStyle();
+// }, 1000);
