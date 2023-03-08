@@ -128,3 +128,27 @@ keyUpDown.addEventListener("keyup", (e) => {
   return (keyDetail.innerHTML = `Key Up - ${e.key}`);
 });
 //-----END OF KEY DOWN & KEY UP-----
+
+//-----FORM-----
+const form = document.querySelector("#form");
+const input = document.querySelector("#noteInput");
+const list = document.querySelector("#notes");
+
+// input.addEventListener("change", (e) => {
+//   console.log("Ada Perubahan!");
+// });
+
+input.addEventListener("input", (e) => {
+  document.querySelector("#h3").innerText = input.value;
+  console.log("Ada Input!");
+});
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const noteValue = input.value;
+  const newList = document.createElement("li");
+  newList.innerText = noteValue;
+  list.append(newList);
+  input.value = " ";
+});
+//-----END OF FORM-----
