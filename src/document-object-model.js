@@ -139,7 +139,7 @@ const list = document.querySelector("#notes");
 // });
 
 input.addEventListener("input", (e) => {
-  document.querySelector("#h3").innerText = input.value;
+  document.querySelector("#h33").innerText = input.value;
   console.log("Ada Input!");
 });
 
@@ -152,3 +152,53 @@ form.addEventListener("submit", function (e) {
   input.value = " ";
 });
 //-----END OF FORM-----
+
+//-----CALL BACK VERSION-----
+const requestCallback = (url, success, failure) => {
+  const delay = Math.floor(Math.random() * 1000) + 500;
+  setTimeout(() => {
+    if (delay > 1000) {
+      failure("Error: Connection Timeout!");
+    } else {
+      success(`Success: ${url} (${delay}ms)`);
+    }
+  }, delay);
+};
+
+requestCallback(
+  "google.com",
+  function (a) {
+    console.log(a);
+    requestCallback(
+      "google.com",
+      function (a) {
+        console.log(a);
+        requestCallback(
+          "google.com",
+          function (a) {
+            console.log(a);
+            requestCallback(
+              "google.com",
+              function (a) {
+                console.log(a);
+              },
+              function (b) {
+                console.log(b);
+              }
+            );
+          },
+          function (b) {
+            console.log(b);
+          }
+        );
+      },
+      function (b) {
+        console.log(b);
+      }
+    );
+  },
+  function (b) {
+    console.log(b);
+  }
+);
+//-----END OF CALL BACK VERSION-----
