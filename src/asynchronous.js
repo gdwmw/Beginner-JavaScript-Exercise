@@ -62,32 +62,75 @@ const requestPromise = (url) => {
   });
 };
 
-requestPromise("google.com")
-  .then((res) => {
-    console.log(res);
-    requestPromise("google.com")
-      .then((res) => {
-        console.log(res);
-        requestPromise("google.com")
-          .then((res) => {
-            console.log(res);
-            requestPromise("google.com")
-              .then((res) => {
-                console.log(res);
-              })
-              .catch((err) => {
-                console.log(err);
-              });
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+// requestPromise("google.com")
+//   .then((res) => {
+//     console.log(res);
+//     requestPromise("google.com")
+//       .then((res) => {
+//         console.log(res);
+//         requestPromise("google.com")
+//           .then((res) => {
+//             console.log(res);
+//             requestPromise("google.com")
+//               .then((res) => {
+//                 console.log(res);
+//               })
+//               .catch((err) => {
+//                 console.log(err);
+//               });
+//           })
+//           .catch((err) => {
+//             console.log(err);
+//           });
+//       })
+//       .catch((err) => {
+//         console.log(err);
+//       });
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// requestPromise("google.com")
+//   .then((result) => {
+//     console.log(`${result} - Page 1`);
+//     return requestPromise("google.com");
+//   })
+//   .then((result) => {
+//     console.log(`${result} - Page 2`);
+//     return requestPromise("google.com");
+//   })
+//   .then((result) => {
+//     console.log(`${result} - Page 3`);
+//     return requestPromise("google.com");
+//   })
+//   .then((result) => {
+//     console.log(`${result} - Page 4`);
+//     return requestPromise("google.com");
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// function makeRequest(page) {
+//   if (page > 4) {
+//     return Promise.resolve(); // Mengembalikan promise resolved saat sudah mencapai halaman 4
+//   }
+//   return requestPromise("google.com")
+//     .then((result) => {
+//       console.log(`${result} - Page ${page}`);
+//       return makeRequest(page + 1); // Rekursif dengan menambah nomor halaman
+//     })
+//     .catch((error) => {
+//       console.log(error);
+//     });
+// }
+// makeRequest(1); // Memulai permintaan dengan halaman 1
+
+// const contohPromise = () => {
+//   return new Promise((resolve, reject) => {
+//     // resolve(() => {});
+//     // reject(() => {});
+//   });
+// };
 //-----END OF PROMISE VERSION-----
