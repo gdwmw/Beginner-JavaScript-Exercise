@@ -49,18 +49,18 @@
 //-----END OF CALL BACK VERSION-----
 
 //-----PROMISE VERSION-----
-const requestPromise = (url) => {
-  return new Promise((resolve, reject) => {
-    const delay = Math.floor(Math.random() * 1000) + 500;
-    setTimeout(() => {
-      if (delay >= 1000) {
-        reject("Error: Connection Timeout!");
-      } else {
-        resolve(`Success: ${url} (${delay}ms)`);
-      }
-    }, delay);
-  });
-};
+// const requestPromise = (url) => {
+//   return new Promise((resolve, reject) => {
+//     const delay = Math.floor(Math.random() * 1000) + 500;
+//     setTimeout(() => {
+//       if (delay >= 1000) {
+//         reject("Error: Connection Timeout!");
+//       } else {
+//         resolve(`Success: ${url} (${delay}ms)`);
+//       }
+//     }, delay);
+//   });
+// };
 
 // requestPromise("google.com")
 //   .then((res) => {
