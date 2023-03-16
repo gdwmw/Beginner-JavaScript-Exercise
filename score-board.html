@@ -5,12 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/tailwind.css">
     <title>Score Board</title>
     <link rel="icon" href="public/favicon.svg">
 </head>
 
 <body>
-
+    <section id="score"></section>
+    <section id="button"></section>
+    <section id="reset"></section>
+    <section class="mt-5 flex justify-center">
+        <label class="mr-2 text-white font-semibold" for="target">TARGET :</label>
+        <select id="target" name="target">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+        </select>
+    </section>
+    <script src="src/score-board.js"></script>
 </body>
 
 </html>
