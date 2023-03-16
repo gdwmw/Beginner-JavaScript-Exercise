@@ -92,7 +92,7 @@ btnP1.setAttribute(
   "class",
   "mr-2 px-3 py-2 border-2 border-amber-400 hover:border-white hover:text-white rounded-lg bg-amber-400 font-semibold"
 );
-btnP1.innerHTML = "PLAYER 1<br>(+1)";
+btnP1.innerHTML = "KEY - ','<br>PLAYER 1<br>(+1)";
 window.addEventListener("keydown", (e) => {
   if (e.key === ",") {
     if (!gameOver) {
@@ -125,7 +125,7 @@ btnP2.setAttribute(
   "class",
   "ml-2 px-3 py-2 border-2 border-amber-400 hover:border-white hover:text-white rounded-lg bg-amber-400 font-semibold"
 );
-btnP2.innerHTML = "PLAYER 2<br>(+1)";
+btnP2.innerHTML = "KEY - '.'<br>PLAYER 2<br>(+1)";
 window.addEventListener("keydown", (e) => {
   if (e.key === ".") {
     if (!gameOver) {
@@ -184,7 +184,7 @@ window.addEventListener("keydown", (e) => {
   }
 });
 btnReset.addEventListener("click", fReset);
-btnReset.innerHTML = "RESET";
+btnReset.innerHTML = "KEY - 'Space'<br>RESET";
 
 //----------------------------
 
