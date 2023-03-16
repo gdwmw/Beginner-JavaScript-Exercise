@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./score-board.html", "./src/score-board.js"],
+  content: ["./src/html/score-board.html", "./src/js/score-board.js"],
   theme: {
     extend: {},
   },
