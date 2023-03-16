@@ -151,4 +151,11 @@ form.addEventListener("submit", function (e) {
   list.append(newList);
   input.value = " ";
 });
+
+//---DELETE---
+list.addEventListener("click", (e) => {
+  e.target.nodeName === "LI" && e.target.remove();
+  // console.dir(e);
+});
+//---END OF DELETE---
 //-----END OF FORM-----
