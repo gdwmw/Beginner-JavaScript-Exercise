@@ -1,19 +1,100 @@
-function myData(nama, umur) {
-  let isi = {};
-  isi.nama = nama;
-  isi.umur = umur;
+//-----OBJECT LITERAL -----
+//PROBLEM : Tidak efektif jika object nya banyak.
+// let teman1 = {
+//   nama: "Skydazmc",
+//   energi: 10,
+//   makan: function (porsi) {
+//     this.energi = this.energi + porsi;
+//     console.log(`Halo ${this.nama}, selamat energi kamu ${this.energi}!`);
+//   },
+// };
+// console.log(teman1.makan(5));
 
-  isi.tambahUmur = function (isiUmur) {
-    this.umur += isiUmur;
-    console.log(`Halo nama saya ${this.nama}, umur saya ${this.umur}`);
-  };
-  return isi;
-}
+// let teman2 = {
+//   nama: "HobbiTxy",
+//   energi: 20,
+//   makan: function (porsi) {
+//     this.energi = this.energi + porsi;
+//     console.log(`Halo ${this.nama}, selamat energi kamu ${this.energi}!`);
+//   },
+// };
+// console.log(teman2.makan(10));
+
+//-----FUNCTION DECLARATION -----
+//PROBLEM : Pemakaian memori besar karna semua isi fungsinya ter clone ulang dan berulah.
+// function myData(nama, umur) {
+//   let isi = {};
+//   isi.nama = nama;
+//   isi.umur = umur;
+
+//   isi.tambahUmur = function (isiTambahUmur) {
+//     this.umur += isiTambahUmur;
+//     console.log(`Halo nama saya ${this.nama}, umur saya ${this.umur}`);
+//   };
+
+//   isi.kurangUmur = function (isiKurangUmur) {
+//     this.umur -= isiKurangUmur;
+//     console.log(`Halo nama saya ${this.nama}, umur saya ${this.umur}`);
+//   };
+//   return isi;
+// }
+
 // myData("Landensaki", 10);
 // isi.tambahUmur(5); // ERROR
 
-let saya = myData("Landensaki", 25);
-saya.tambahUmur(5);
+// let landensaki = myData("Landensaki", 25);
+// console.log(landensaki);
+// landensaki.tambahUmur(5);
+// landensaki.kurangUmur(10);
+
+// let hobbitxy = myData("HobbiTxy", 20);
+// console.log(hobbitxy);
+// hobbitxy.tambahUmur(5);
+// hobbitxy.kurangUmur(10);
+
+//-----CONSTRUCTOR FUNCTION-----
+// function myData(nama, umur) {
+//   this.nama = nama;
+//   this.umur = umur;
+
+//   this.tambahUmur = function (isiTambahUmur) {
+//     this.umur += isiTambahUmur;
+//     console.log(`Halo nama saya ${this.nama}, umur saya ${this.umur}`);
+//   };
+
+//   this.kurangUmur = function (isiKurangUmur) {
+//     this.umur -= isiKurangUmur;
+//     console.log(`Halo nama saya ${this.nama}, umur saya ${this.umur}`);
+//   };
+// }
+
+// let landensaki = new myData("Landensaki", 20);
+// landensaki.tambahUmur(10);
+// landensaki.kurangUmur(5);
+
+// let hobbitxy = new myData("HobbiTxy", 10);
+// hobbitxy.tambahUmur(15);
+// hobbitxy.kurangUmur(5);
+
+//-----PROTOTYPE-----
+function Mahasiswa(nama, energi) {
+  this.nama = nama;
+  this.energi = energi;
+}
+
+Mahasiswa.prototype.makan = function (porsi) {
+  this.energi += porsi;
+  return console.log(`Hallo ${this.nama}, energi kamu ${this.energi}`);
+};
+
+Mahasiswa.prototype.tidur = function (jam) {
+  this.energi += jam * 2;
+  return console.log(`Hallo ${this.nama}, energi kamu ${this.energi}`);
+};
+
+let landensaki = new Mahasiswa("Landensaki", 20);
+console.log(landensaki);
+landensaki.tidur(10);
 
 //----------------------------
 
