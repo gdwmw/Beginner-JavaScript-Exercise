@@ -1,4 +1,4 @@
-//-----OBJECT LITERAL -----
+//-----OBJECT LITERAL-----
 //PROBLEM : Tidak efektif jika object nya banyak.
 // let teman1 = {
 //   nama: "Skydazmc",
@@ -20,7 +20,7 @@
 // };
 // console.log(teman2.makan(10));
 
-//-----FUNCTION DECLARATION -----
+//-----FUNCTION DECLARATION-----
 //PROBLEM : Pemakaian memori besar karna semua isi fungsinya ter clone ulang dan berulah.
 // function myData(nama, umur) {
 //   let isi = {};
@@ -97,26 +97,60 @@
 // landensaki.tidur(10);
 
 //-----CLASS-----
-class Mahasiswa {
-  constructor(nama, energi) {
-    this.nama = nama;
-    this.energi = energi;
-  }
+// class Mahasiswa {
+//   constructor(nama, energi) {
+//     this.nama = nama;
+//     this.energi = energi;
+//   }
 
-  makan(porsi) {
-    this.energi += porsi;
-    return console.log(`Hallo ${this.nama}, energi kamu ${this.energi}`);
-  }
+//   makan(porsi) {
+//     this.energi += porsi;
+//     return console.log(`Hallo ${this.nama}, energi kamu ${this.energi}`);
+//   }
 
-  tidur(jam) {
-    this.energi += jam * 2;
-    return console.log(`Hallo ${this.nama}, energi kamu ${this.energi}`);
-  }
-}
+//   tidur(jam) {
+//     this.energi += jam * 2;
+//     return console.log(`Hallo ${this.nama}, energi kamu ${this.energi}`);
+//   }
+// }
 
-let landensaki = new Mahasiswa("Landensaki", 20);
-console.log(landensaki);
-landensaki.tidur(10);
+// let landensaki = new Mahasiswa("Landensaki", 20);
+// console.log(landensaki);
+// landensaki.tidur(10);
+
+//-----CLOSURE-----
+// function init() {
+//   let nama = "Landensaki";
+//   function tampilNama() {
+//     console.log(nama);
+//   }
+//   tampilNama();
+// }
+// init();
+
+// let add = (function () {
+//   let counter = 0;
+//   return function () {
+//     return ++counter;
+//   };
+// })();
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(add());
+// }
+
+//-----FUNCTION FACTORY-----
+// function ucapkanSalam(waktu) {
+//   return function (nama) {
+//     console.log(`Hallo ${nama}, selamat ${waktu}, semoga harimu menyenangkan!`);
+//   };
+// }
+
+// let selamatPagi = ucapkanSalam("Pagi");
+// selamatPagi("Landensaki");
+
+// let selamatMalam = ucapkanSalam("Malam");
+// selamatPagi("Skydaz");
 
 //----------------------------
 
